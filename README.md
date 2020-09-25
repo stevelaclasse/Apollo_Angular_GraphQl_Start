@@ -26,4 +26,6 @@ For my example:
 - The mutation createLocation is returning the new created Location
 - The subscription subscribeAllLocations is returning an array of Location every time one Location is created, updaded or deleted
 
+For the subscription support in graphql.module.ts, you may need to add theses two packages : 'apollo-link-ws' and 'subscriptions-transport-ws' .
+
 Hope it helps someone starting with the GraphQl client Apollo with ANgular !!
