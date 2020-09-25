@@ -1,0 +1,48 @@
+<!-- You can put it anywhere in the file app.component.html
+I have put it in the Footer
+-->
+
+<p> Section for the result of the Graphql Server for Query 1</p>
+    <br/>
+      <table>
+      <div *ngFor = "let oneLocation of newLocations">
+        <br/>
+        <tr> <td>{{oneLocation.name}}</td> <td>{{oneLocation.id}}</td></tr>
+      </div>
+      </table> 
+
+      
+    <p> Section for the result of the Graphql Server for Query 2</p>
+    <br/>
+     <table>
+      <div *ngFor = "let oneLocation of Locations | async">
+        <br/>
+        <tr> <td>{{oneLocation.name}}</td> <td>{{oneLocation.id}}</td></tr>
+      </div>
+      </table>
+
+      <p> Section for the result of the Graphql Server for Query 3</p>
+    <br/>
+     <table>
+      <div *ngFor = "let oneLocation of allLocations">
+        <br/>
+        <tr> <td>{{oneLocation.name}}</td> <td>{{oneLocation.id}}</td></tr>
+      </div>
+      </table> 
+    
+   
+
+       <p> Section for the result of the Graphql Server for Mutation</p>
+     <br/>
+    <p> New Location : id: {{location.id}}, name: {{location.name}}</p>
+   
+
+
+  <p> Section for the result of the Graphql Server for Subscription</p>
+    <br/>
+     <table>
+      <div *ngFor = "let oneLocation of allSubscribedLocationsArray">
+        <br/>
+        <tr> <td>{{oneLocation.name}}</td> <td>{{oneLocation.id}}</td></tr>
+      </div>
+      </table> 
