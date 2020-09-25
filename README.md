@@ -1,4 +1,4 @@
-# Apollo_Angular_Graphql_Start
+# Apollo_Angular_GraphQl_Start
 
 Here i am just going to give my configuration and code for the GraphQl client Apollo with Angular.
 
